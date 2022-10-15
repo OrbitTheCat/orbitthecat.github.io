@@ -383,3 +383,132 @@ nav[data-active=true] {
   }
 
 }
+
+@media only screen and (max-width: 1001px) {
+  .title1 {
+    font-size: 5vw;
+    width: 40vw;
+  }
+  .title2 {
+    font-size: 4vw;
+  }
+
+  .project.show {
+    animation: shadow-anim .7s;
+    box-shadow: 
+    0 0 0 5px #ee6352,
+    0 0 0 10px #d45379,
+    0 0 0 15px #a4558f,
+    0 0 0 20px #6d588e,
+    0 0 0 25px #405378;
+  }
+  @keyframes shadow-anim {
+    0% {
+      box-shadow: 
+      0 0 0 0px;
+    }
+    20%{
+      box-shadow: 
+      0 0 0 5px #ee6352;
+    }
+    40%{
+      box-shadow: 
+      0 0 0 5px #ee6352,
+      0 0 0 10px #d45379;
+    }
+    60%{
+      box-shadow: 
+      0 0 0 5px #ee6352,
+      0 0 0 10px #d45379,
+      0 0 0 15px #a4558f;
+    }
+    80%{
+      box-shadow: 
+      0 0 0 5px #ee6352,
+      0 0 0 10px #d45379,
+      0 0 0 15px #a4558f,
+      0 0 0 20px #6d588e;
+    }
+    100% {
+      box-shadow: 
+      0 0 0 5px #ee6352,
+      0 0 0 10px #d45379,
+      0 0 0 15px #a4558f,
+      0 0 0 20px #6d588e,
+      0 0 0 25px #405378;
+    }
+  }
+  .projects {
+    max-width: 70vw;
+  }
+
+}
+
+@media only screen and (max-width: 445px) {
+  .title1 {
+    font-size: 10vw;
+    width: 80vw;
+  }
+  .title2 {
+    font-size: 7vw;
+  }
+
+  .project.show {
+    animation: shadow-anim .7s;
+    box-shadow: 
+    0 0 0 5px #ee6352,
+    0 0 0 10px #d45379,
+    0 0 0 15px #a4558f,
+    0 0 0 20px #6d588e,
+    0 0 0 25px #405378;
+  }
+  @keyframes shadow-anim {
+    0% {
+      box-shadow: 
+      0 0 0 0px;
+    }
+    20%{
+      box-shadow: 
+      0 0 0 5px #ee6352;
+    }
+    40%{
+      box-shadow: 
+      0 0 0 5px #ee6352,
+      0 0 0 10px #d45379;
+    }
+    60%{
+      box-shadow: 
+      0 0 0 5px #ee6352,
+      0 0 0 10px #d45379,
+      0 0 0 15px #a4558f;
+    }
+    80%{
+      box-shadow: 
+      0 0 0 5px #ee6352,
+      0 0 0 10px #d45379,
+      0 0 0 15px #a4558f,
+      0 0 0 20px #6d588e;
+    }
+    100% {
+      box-shadow: 
+      0 0 0 5px #ee6352,
+      0 0 0 10px #d45379,
+      0 0 0 15px #a4558f,
+      0 0 0 20px #6d588e,
+      0 0 0 25px #405378;
+    }
+  }
+  #projectSe {
+    height: 110vh;
+  }
+  .projects {
+    max-width: 70vw;
+  }
+
+  .wrapText {
+    margin-top: 20vw;
+    font-size: 15px;
+    max-width: 60vw;
+  }
+
+}
