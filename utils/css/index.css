@@ -169,6 +169,8 @@ nav[data-active=true] {
   transition: ease-out 2s
 }
 
+
+
 .title1.toggled {
   transition: ease-out 1s;
   opacity: 0;
@@ -188,10 +190,10 @@ nav[data-active=true] {
   background-position: center;
   background-size: cover;
   position: relative;
-  margin-top: -35rem;
+  pointer-events: none;
   z-index: 3;
   height: 300px;
-  margin-top: -3.2rem;
+  margin-top: -4rem;
 }
 
 .layer1 {
@@ -316,7 +318,7 @@ nav[data-active=true] {
   margin-top: 10%;
   color: white;
   font-family: "Rubik", sans-serif;
-  max-width: 50rem;
+  max-width: 60rem;
   font-size: 1.2vw;
   margin-left: auto;
   margin-right: auto;
@@ -331,4 +333,9 @@ nav[data-active=true] {
   font-weight: 100;
   font-style: italic;
 }
+
+.wrapText p:nth-child(4n) {
+  margin-top: 20px;
+}
+
 
