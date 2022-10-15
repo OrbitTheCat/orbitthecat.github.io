@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   overflow-x: hidden;
@@ -191,25 +195,27 @@ nav[data-active=true] {
   background-size: cover;
   position: relative;
   pointer-events: none;
-  z-index: 3;
+  z-index: 2;
   height: 300px;
-  margin-top: -4rem;
+
 }
 
 .layer1 {
   background-image: url('/utils/svgs/layer1.svg');
+  margin-top: -4rem;
 }
 
 .layer2 {
   background-image: url('/utils/svgs/layer2.svg');
 }
 
-#project {
+#projectSe {
   background-color: var(--bgr);
   padding-top: 1px;
-  height: 100vh;
+  height: 50rem;
   width: 100%;
   position: relative;
+  z-index: 3;
 }
 
 .title2 {
@@ -232,7 +238,7 @@ nav[data-active=true] {
   padding: 20px;
   color: white;
   border-radius: 1em;
-
+  position: static;
 }
 
 .project.show {
@@ -299,7 +305,7 @@ nav[data-active=true] {
 #about {
   background-color: var(--bgr);
   margin-top: -5rem;
-  height: 100vh;
+  height: 40rem;
   width: 100%;
   position: absolute;
 }
