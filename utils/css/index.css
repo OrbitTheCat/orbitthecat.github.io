@@ -499,16 +499,20 @@ nav[data-active=true] {
     }
   }
   #projectSe {
-    height: 110vh;
+    height: 135vh;
   }
   .projects {
     max-width: 70vw;
   }
 
   .wrapText {
-    margin-top: 20vw;
+    margin-top: 25vw;
     font-size: 15px;
     max-width: 60vw;
+  }
+
+  #about {
+    height: 100vh;
   }
 
 }
