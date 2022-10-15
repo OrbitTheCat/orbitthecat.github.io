@@ -2,12 +2,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
+  margin: 0px;
   height: 100vh;
   overflow-x: hidden;
-  margin: 0px;
+  position:relative;
 }
 
 body[data-active=true] {
@@ -344,4 +346,40 @@ nav[data-active=true] {
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 1141px) {
 
+  .title3 {
+    top: 10%;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 3vw;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  
+  .wrapText {
+    margin-top: 12%;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    max-width: 60vh;
+    font-size: 1.2vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+  }
+  
+  .wrapText p:nth-child(2n) {
+    margin-top: -15px;
+  }
+  
+  .wrapText p:nth-child(3n) {
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .wrapText p:nth-child(4n) {
+    margin-top: 20px;
+  }
+
+}

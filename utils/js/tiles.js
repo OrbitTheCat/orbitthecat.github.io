@@ -1,11 +1,6 @@
 const wrapper = document.getElementById("tiles");
 const text = document.getElementById("title1")
-
-const colors = [
-  "rgb(229, 57, 53)",
-  "rgb(253, 216, 53)",
-  "rgb(253, 2, 53)"
-];
+const home = document.getElementById("home")
 
 let toggled = false
 
