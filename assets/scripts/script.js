@@ -28,3 +28,14 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 hidden.forEach((el) => observer.observe(el));
+
+document.addEventListener("mousemove", parallax);
+function parallax(e) {
+    document.querySelectorAll(".o-top, .o-bot, .r-i, .r-o, .r-r").forEach(function(move) {
+        var moving_value = move.getAttribute("data-value");
+        var x = (e.clientX * moving_value) / 500;
+        var y = (e.clientY * moving_value) / 500;
+
+        move.style.transform = "translateX(" + x +"px) translateY(" + y +"px)"
+    })
+}

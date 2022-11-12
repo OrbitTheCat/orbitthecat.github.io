@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 ::selection {
@@ -163,9 +164,44 @@ svg rect, circle, .hamburger-btn[data-active=true] {
 
 /* ZAČÍNA HTML PRO STRÁNKU */
 
-#bgr {
+.o-top, .o-bot {
     position: absolute;
 }
+
+.o-top {
+    position: absolute;
+    margin-top: -12rem;
+    margin-left: -40rem;
+    rotate: -45deg;
+}
+
+.o-bot {
+    position: absolute;
+    margin-top: -16rem;
+    margin-left: 60rem;
+    rotate: 45deg;
+}
+
+.r-i {
+    position: absolute;
+    rotate: -65deg;
+    margin-left: 45rem;
+    margin-top: 16rem;
+}
+
+.r-o {
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: 0rem;
+    margin-top: -0rem;
+}
+
+.r-r {
+    margin-top: 5rem;
+    rotate: -158deg;
+    margin-left: -40rem;
+}
+
 #home {
     position: relative;
     top: 0;
@@ -243,77 +279,12 @@ svg rect, circle, .hamburger-btn[data-active=true] {
     z-index: 2;
 }
 
-.circle {
-    width:80px;
-    height:80px;
-    border-radius:50%;
-    border-radius:50%;
-    border-radius:50%;
-    background:#fff;
-    left: 50vw;
-    top: -10rem;
+#bgr {
     position: absolute;
-    opacity: 1;
-    z-index: 1;
-}
-
-.circle.on {
-    opacity: 1;
-}
-    
-.circle.yel {
-    box-shadow:
-    inset 0 0 30px 0 #fff,
-    inset 20px 0 30px #ffd400,
-    inset -20px 0 30px red,
-    inset 20px 0 60px #ff40d6,
-    inset -20px 0 300px #e3ff4b,
-    0 0 50px #fff,
-    -10px 0 100px #fbff00,
-    10px 0 80px #f55;
-    margin-top: 5rem;
-
-}
-
-.circle.blu {
-    box-shadow:
-    inset 0 0 30px 0 #fff,
-    inset 20px 0 30px #0004ff,
-    inset -20px 0 30px red,
-    inset 20px 0 60px #ff000d,
-    inset -20px 0 300px #001aff,
-    0 0 50px #fff,
-    -10px 0 100px #3700ff,
-    10px 0 80px #f55;
-    margin-left: -30rem;
-}
-
-.circle.gre {
-    box-shadow:
-    inset 0 0 30px 0 #fff,
-    inset 20px 0 30px #2bff00,
-    inset -20px 0 30px rgb(3, 100, 0),
-    inset 20px 0 60px #ff40d6,
-    inset -20px 0 300px #1eb142,
-    0 0 50px #fff,
-    -10px 0 100px #00ff22,
-    10px 0 80px rgb(113, 255, 85);
-    margin-left: -25rem;
-    margin-top: 25rem;
-}
-
-.circle.red {
-    box-shadow:
-    inset 0 0 30px 0 #fff,
-    inset 20px 0 30px red,
-    inset -20px 0 30px red,
-    inset 20px 0 60px #ff40d6,
-    inset -20px 0 300px #e3ff4b,
-    0 0 50px #fff,
-    -10px 0 100px red,
-    10px 0 80px #f55;
-    margin-left: 13vmin;
-    margin-top: 1rem;
+    z-index: 2;
+    display: block;
+    margin-top: -12rem;
+    margin-left: 40rem;
 }
 
 #skills {
@@ -419,7 +390,7 @@ svg rect, circle, .hamburger-btn[data-active=true] {
 
 .skill h3 {
     border-left: 2px rgba(255, 255, 255, 0.5) solid;
-    padding-left: 2.7rem;
+    padding-left: 1.6rem;
 }
 
 
@@ -482,6 +453,14 @@ svg rect, circle, .hamburger-btn[data-active=true] {
 
     .skill {
         margin-left: 50px;
+    }
+
+    .MyExp {
+        padding-top: 15px;
+    }
+
+    #skills {
+        height: 200vh;
     }
 
 }
