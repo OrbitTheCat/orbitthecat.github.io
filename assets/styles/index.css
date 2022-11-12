@@ -445,6 +445,10 @@ svg rect, circle, .hamburger-btn[data-active=true] {
         position: relative;
         margin-right: 150px;
     }
+
+    .intro-text {
+        margin-top: 150px;
+    }
     #home h3 {
         font-family: 'Rubik', sans-serif;
         font-weight: 500;
