@@ -438,17 +438,10 @@ svg rect, circle, .hamburger-btn[data-active=true] {
 }
 
 @media all and (max-width: 467px) {
-    .hamburger-btn {
-        background: none;
-        border: none;
-        z-index: 1000;
-        position: relative;
-        margin-right: 150px;
-    }
-
     .intro-text {
         margin-top: 200px;
     }
+
     #home h3 {
         font-family: 'Rubik', sans-serif;
         font-weight: 500;
@@ -488,7 +481,7 @@ svg rect, circle, .hamburger-btn[data-active=true] {
     }
 
     .skill {
-        margin-left: 85px;
+        margin-left: 50px;
     }
 
 }
