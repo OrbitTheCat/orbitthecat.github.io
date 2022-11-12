@@ -333,6 +333,12 @@ svg rect, circle, .hamburger-btn[data-active=true] {
     font-size: 4em;
 }
 
+#skills .wrap {
+    z-index: 5;
+    display: flex;
+    margin-left: 25vw;
+}
+
 .skill .text {
     margin-right: 12rem;
 }
@@ -418,16 +424,16 @@ svg rect, circle, .hamburger-btn[data-active=true] {
 
 
 .show {
-    margin-left: 0px;
+    margin-left: 25vw;
     animation: stagger .9s ease-in-out;
 }
 
 
 @keyframes stagger {
     from{
-        margin-left: -800px;
+        margin-left: -2vw;
     }to{
-        margin-left: 0;
+        margin-left: 25vw;
     }
 }
 
@@ -474,6 +480,15 @@ svg rect, circle, .hamburger-btn[data-active=true] {
         background-repeat: repeat no-repeat;
         background-position-y: 30px;
         background-size: 50px;
+    }
+
+    #skills .wrap {
+        z-index: 5;
+        display: inline;
+    }
+
+    .skill {
+        margin-left: 85px;
     }
 
 }
