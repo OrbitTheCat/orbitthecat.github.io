@@ -56,7 +56,6 @@ header {
     border: none;
     z-index: 1000;
     position: relative;
-    margin-right: 150px;
 }
 
 .icons-style {
@@ -438,7 +437,45 @@ svg rect, circle, .hamburger-btn[data-active=true] {
     }
 }
 
+@media all and (max-width: 467px) {
+    .hamburger-btn {
+        background: none;
+        border: none;
+        z-index: 1000;
+        position: relative;
+        margin-right: 150px;
+    }
+    #home h3 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        -webkit-text-stroke: var(--blue) 2.5px;
+        color: transparent;
+        font-size: 2.5em;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        position: relative;
+        z-index: 9;
+    }
+    
+    .name, .nick {
+        color: var(--blue);
+        -webkit-text-stroke: 0px;
+        opacity: 1;
+        animation: wave 5s linear infinite;
+        animation-play-state: paused;
+    }
 
+    .nick {
+        animation: wave 1.5s linear infinite;
+        animation-play-state: paused;
+    }
 
+    .wave {
+        background-image: url(/assets/img/wave.svg);
+        background-repeat: repeat no-repeat;
+        background-position-y: 30px;
+        background-size: 50px;
+    }
 
-
+}
