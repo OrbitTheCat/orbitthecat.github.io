@@ -18,6 +18,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: var(--bgr);
 }
 
 html {
@@ -113,7 +114,7 @@ svg rect, circle, .hamburger-btn[data-active=true] {
 }
 
 .hamburger-btn[data-active=true] {
-    rotate: 45deg;
+    transform: rotate(45deg);
 }
 .hamburger-btn[data-active=true] .rect1 {
     width: 45px;
@@ -161,12 +162,16 @@ svg rect, circle, .hamburger-btn[data-active=true] {
 }
 
 /* ZAČÍNA HTML PRO STRÁNKU */
-#home {
+
+#bgr {
     position: absolute;
+}
+#home {
+    position: relative;
     top: 0;
     left: 0;
-    width: 100%;
-    height:100%;
+    width: 100vw;
+    height: 58vh;
     background: linear-gradient(180deg, var(--bgr), 90%, #1c1c20);
 }
 
@@ -188,6 +193,13 @@ svg rect, circle, .hamburger-btn[data-active=true] {
     color: var(--blue);
     -webkit-text-stroke: 0px;
     opacity: 1;
+    animation: wave 5s linear infinite;
+    animation-play-state: paused;
+}
+
+.nick {
+    animation: wave 1.5s linear infinite;
+    animation-play-state: paused;
 }
 
 .wave {
@@ -202,12 +214,13 @@ svg rect, circle, .hamburger-btn[data-active=true] {
 }
 
 .name:hover {
+    animation-play-state: running;
     cursor: help;
-    animation: wave 5s linear infinite;
+
 }
 .nick:hover {
     cursor: help;
-    animation: wave 1.5s linear infinite;
+    animation-play-state: running;
 }
 
 @keyframes wave {
@@ -238,7 +251,8 @@ svg rect, circle, .hamburger-btn[data-active=true] {
     border-radius:50%;
     background:#fff;
     left: 50vw;
-    position: relative;
+    top: -10rem;
+    position: absolute;
     opacity: 1;
     z-index: 1;
 }
@@ -306,7 +320,6 @@ svg rect, circle, .hamburger-btn[data-active=true] {
     height: 100vh;
     width: 100vw;
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 12.5vh;
     background-color: var(--bgr2);
 }
 
@@ -351,7 +364,7 @@ svg rect, circle, .hamburger-btn[data-active=true] {
 
 .skill {
     border: rgb(255, 255, 255, 50%) solid 2px;
-    height: 310px;
+    height: 350px;
     width: 300px;
     text-align: center;
 }
@@ -382,52 +395,49 @@ svg rect, circle, .hamburger-btn[data-active=true] {
 
 .skill h3 {
     text-align: left;
-    max-width: 13rem;
+    max-width: 13rem ;
     margin-left: 60px;
     font-family: "Poppins",Sans-serif;
     color: white;
     font-weight: 500;
 }
 
-.h3-top::after {
+.skill h3::before {
     content: "<h3>";
-    margin-left: -200px;
-    color: white;
-    font-family: "Poppins",Sans-serif;
-    opacity: 50%;
+    position: absolute;
+    margin-left: -50px;
+    opacity: .5;
+    margin-top: -25px;
 }
 
-.h3-bot::after {
+.skill h3::after {
     content: "</h3>";
-    margin-left: -200px;
-    color: white;
-    font-family: "Poppins",Sans-serif;
-    opacity: 50%;
+    position: absolute;
+    margin-left: -50px;
+    opacity: .5;
 }
 
-.h3-line {
-    position: absolute;
-    height: 11rem;
-    width: 2px;
-    background-color: white;
-    margin-left: -100px;
-    opacity: 50%;
+.skill h3 {
+    border-left: 2px rgba(255, 255, 255, 0.5) solid;
+    padding-left: 2.7rem;
 }
 
-.unity {
-    position: absolute;
-    height: 7rem;
-    width: 2px;
-    background-color: white;
-    margin-left: -100px;
-    opacity: 50%;
+
+.show {
+    margin-left: 0px;
+    animation: stagger .9s ease-in-out;
 }
 
-.front {
-    position: absolute;
-    height: 11rem;
-    width: 2px;
-    background-color: white;
-    margin-left: -100px;
-    opacity: 50%;
+
+@keyframes stagger {
+    from{
+        margin-left: -800px;
+    }to{
+        margin-left: 0;
+    }
 }
+
+
+
+
+

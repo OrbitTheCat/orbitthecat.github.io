@@ -15,3 +15,16 @@ navToggle.addEventListener("click", () => {
         nav.setAttribute("data-active", false)
     }
 }) 
+
+const hidden = document.querySelectorAll('.wrap');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+hidden.forEach((el) => observer.observe(el));
