@@ -333,12 +333,6 @@ svg rect, circle, .hamburger-btn[data-active=true] {
     font-size: 4em;
 }
 
-#skills .wrap {
-    z-index: 5;
-    display: flex;
-    justify-content: center;
-}
-
 .skill .text {
     margin-right: 12rem;
 }
@@ -447,7 +441,7 @@ svg rect, circle, .hamburger-btn[data-active=true] {
     }
 
     .intro-text {
-        margin-top: 150px;
+        margin-top: 200px;
     }
     #home h3 {
         font-family: 'Rubik', sans-serif;
